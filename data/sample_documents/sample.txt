@@ -1,0 +1,42 @@
+
+# Enterprise RAG Systems: A Comprehensive Guide
+
+## Introduction
+
+Retrieval-Augmented Generation (RAG) has become the standard approach for building 
+production LLM applications. Unlike fine-tuning, RAG allows you to ground LLM 
+responses in your specific documents without retraining the model.
+
+## How RAG Works
+
+The RAG pipeline consists of several key steps:
+
+1. Document Processing: Extract text from various formats (PDF, DOCX, etc.)
+2. Chunking: Split documents into semantic units
+3. Embedding: Convert chunks into vector representations
+4. Storage: Store vectors in a vector database
+5. Retrieval: Find relevant chunks for user queries
+6. Generation: Use LLM to generate answers from retrieved context
+
+## Why RAG Matters
+
+RAG solves the key problems with using LLMs in production:
+- Reduces hallucinations by grounding in facts
+- Allows quick updates without retraining
+- Provides source attribution
+- Works with private/proprietary data
+
+## Best Practices
+
+When implementing RAG systems, consider:
+- Chunk size optimization (typically 500-1000 tokens)
+- Overlap between chunks for context continuity
+- Metadata preservation for filtering
+- Embedding model selection
+- Retrieval strategy (semantic search, hybrid, etc.)
+
+## Conclusion
+
+RAG represents the practical path to production LLM applications. 
+By combining retrieval with generation, we get the best of both worlds: 
+accurate, up-to-date information with natural language generation.
